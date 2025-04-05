@@ -1,6 +1,8 @@
 import React from "react";
 import "./Results.css";
 
+//start
+
 const Results = ({ moves, time, onRestart, onNewGame }) => {
   return (
     <div className="results-overlay">
@@ -31,5 +33,5 @@ const Results = ({ moves, time, onRestart, onNewGame }) => {
     </div>
   );
 };
-
+//end 
 export default Results;
