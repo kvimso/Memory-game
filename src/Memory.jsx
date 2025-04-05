@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Header from "./Header";
 import Results from "./Results";
 import "./Memory.css";
-
+//test1
 const generateCards = (size) => {
   const totalPairs = (size * size) / 2;
   const numbers = Array.from({ length: totalPairs }, (_, i) => i + 1);
@@ -35,7 +35,9 @@ export default function MemoryGame({ gridSize, onNewGame }) {
   }, []);
 
  
-  useEffect(() => {
+
+
+    useEffect(() => {
     setCards(generateCards(size));
     setLives(3);
     setScore(0);
@@ -71,6 +73,11 @@ export default function MemoryGame({ gridSize, onNewGame }) {
      
       const card1 = cards[first];
       const card2 = cards[second];
+
+
+
+
+
 
       if (card1.value === card2.value) {
        
