@@ -39,10 +39,10 @@ export default function MemoryGame({ gridSize, onNewGame }) {
 
     useEffect(() => {
     setCards(generateCards(size));
-    setLives(3);
+    setLives(16);
     setScore(0);
     setMoves(0);
-    setTime(40);
+    setTime(120);
     setIsGameOver(false);
   }, [size]);
 
