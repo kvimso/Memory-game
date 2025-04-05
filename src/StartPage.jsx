@@ -1,3 +1,4 @@
+//starteri gverid
 import "./StartPage.css";
 import { useState, useEffect } from "react";
 import MemoryGame from "./Memory";
@@ -50,6 +51,8 @@ function StartPage() {
             >
               4x4
             </button>
+
+
             <button
               className={`btn ${gridSize === 6 ? "active" : ""}`}
               onClick={() => setGridSize(6)}
